@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrar alumnos</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="row">
+				<div class="col s12">
+					<h2 class="center">
+						Registrar estudiantes
+					</h2>
+				</div>
+			</div>
+			<div class="col s9">
+				<table id="tablaEstudiantes" class="highlight">
+			        <thead>
+			          <tr>
+			              <th>ID</th>
+			              <th>Nombre</th>
+			              <th>Apellido</th>
+			              <th>Código</th>
+			              <th>Edad</th>
+			              <th>Editar</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			          </tr>
+			        </tbody>
+		     	</table>
+			</div>
+			<div class="col s3">
+			  <div class="row">
+			    <form class="col s12">
+			      <div class="row">
+			        <div class="input-field col s12">
+			          <input id="nombre" type="text" class="validate">
+			          <label for="nombre">Primer nombre</label>
+			        </div>
+			        <div class="input-field col s12">
+			          <input id="apellido" type="text" class="validate">
+			          <label for="apellido">Apellido</label>
+			        </div>
+			        <div class="input-field col s12">
+			          <input id="codigo" type="number" class="validate">
+			          <label for="codigo">Código</label>
+			        </div>
+			        <div class="input-field col s12">
+			          <input id="edad" type="number" class="validate">
+			          <label for="edad">Edad</label>
+			        </div>
+			        <div class="col s12">
+			        <button id="boton" class="btn right">Registrar</button>
+			        </div>
+			      </div>
+			    </form>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	  <!-- Modal Structure -->
+	  <div id="modal1" class="modal">
+	    <div class="modal-content">
+			<form class="col s12">
+		      <div class="row">
+				<div class="col s12">
+					<h3 class="center">
+						Editar
+					</h3>
+				</div>
+		        <div class="input-field col s6">
+		          <input id="nombreEdit" type="text" class="validate">
+		          <label for="nombreEdit">Primer nombre</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="apellidoEdit" type="text" class="validate">
+		          <label for="apellidoEdit">Apellido</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="codigoEdit" type="number" class="validate">
+		          <label for="codigoEdit">Código</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="edadEdit" type="number" class="validate">
+		          <label for="edadEdit">Edad</label>
+		        </div>
+		      </div>
+			</form>
+	    </div>
+	    <div class="modal-footer">
+	      <a id="editar" href="#!" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
+	      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+	    </div>
+	  </div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

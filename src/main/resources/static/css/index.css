@@ -1,0 +1,16 @@
+.input-field {
+    margin-bottom: 0px!important;
+}
+.del{
+	cursor: pointer;
+	float:left;
+	padding: 3px;
+    left: 10px;
+    position: relative;
+}
+.btn-editar{
+	float:left;
+	cursor: pointer;
+	padding: 3px;
+    position: relative;
+}
